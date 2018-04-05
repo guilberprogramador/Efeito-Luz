@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Aprendendo JavaScript</title>
+    <meta charset="utf-8">
+    <style>
+        img#luz{
+          padding-left: 600px;
+          padding-top: 250px;
+          display: block;
+        }
+        span#tag{
+        padding-left: 420px;
+        font-size: 20px;
+        font-family: impact;
+        }
+
+    </style>
+    <script>
+
+      function acendeLampada() {
+        document.getElementById("luz").src ="img/acendida.jpg";
+      }
+      function apagaLampada() {
+        document.getElementById("luz").src ="img/apagada.jpg";
+      }
+      function quebraLampada() {
+        document.getElementById("luz").src = "img/quebrada.jpg";
+      }
+
+    </script>
+</head>
+<body>
+  <img src="img/apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()">
+  <span id="tag">Clique com o Mouse passe o Mouse e Tire o Mouse para Ativar Efeitos de Imagem</span>
+</body>
+</html>
